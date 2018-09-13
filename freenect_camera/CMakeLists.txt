@@ -29,6 +29,7 @@ generate_dynamic_reconfigure_options(cfg/Freenect.cfg)
 find_package(Boost REQUIRED COMPONENTS thread)
 
 include_directories(include
+                    /usr/include
                     ${catkin_INCLUDE_DIRS}
                     ${Boost_INCLUDE_DIR}
                     ${dynamic_reconfigure_PACKAGE_PATH}/cmake/cfgbuild.cmake
